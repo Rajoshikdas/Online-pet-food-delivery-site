@@ -1,0 +1,9 @@
+/* App-wide styles - imports all page and base styles */
+@import './base.css';
+@import './products.css';
+@import './home.css';
+@import './checkout.css';
+@import './wishlist.css';
+@import './orders.css';
+@import './product-detail.css';
+@import './prescriptions.css';

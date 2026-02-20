@@ -1,0 +1,20 @@
+/* Base styles - fonts, scroll, body */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+
+@font-face {
+  font-family: 'Rainbow Colors';
+  src: url('/fonts/RainbowColors.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  width: 100%;
+}
