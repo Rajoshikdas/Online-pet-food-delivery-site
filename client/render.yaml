@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: pet-food-frontend
+    env: static
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        scope: build
+        value: https://online-pet-food-delivery-site-1.onrender.com/api
