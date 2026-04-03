@@ -1,11 +1,22 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "npm install && npm run build",
   "outputDirectory": "dist",
   "framework": null,
   "installCommand": "npm install",
   "env": {
     "VITE_API_URL": "@vite_api_url"
   },
+  "headers": [
+    {
+      "source": "/index.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=3600"
+        }
+      ]
+    }
+  ],
   "rewrites": [
     {
       "src": "/(.*)",
