@@ -1,15 +1,15 @@
 {
   "buildCommand": "npm run build",
-  "installCommand": "npm install",
   "outputDirectory": "dist",
-  "framework": "vite",
+  "framework": null,
+  "installCommand": "npm install",
   "env": {
     "VITE_API_URL": "@vite_api_url"
   },
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
